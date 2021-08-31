@@ -7,7 +7,8 @@ This is the repository of paper "AProNet: Detecting Objects with Precise Orienta
     CUDNN: 7  
 
     conda create --name AProNet python=3.6
-
+    conda activate AProNet
+    
 Compile the `poly_nms`:    
 
     cd ${work_dir}/DOTA_devkit/utils/poly_nms  
