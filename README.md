@@ -60,11 +60,10 @@ from txt2json import collect_unaug_dataset, convert
 img_dic = collect_unaug_dataset( os.path.join( "trainset", "labelTxt" ) )
 convert( img_dic, "trainset",  os.path.join( "trainset", "train.json" ) )
 ```
-b. Edit the file `maskrcnn_benchmark/config/paths_catalog.py` to set the datasets.  
+b. Edit the file `maskrcnn_benchmark/config/paths_catalog.py` (from line7 to 17) to set the dir of datasets.  
 ```python
     DATA_DIR = "datasets"  #need to change
     DATASETS = {
-        # NOTE Mingtao
         "dota_trainval_cut": {
             "img_dir": "/DOTA/trainval_cut/images",            #need to change
             "ann_file": "/DOTA/trainval_cut/trainval_cut.json" #need to change
