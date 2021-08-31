@@ -9,7 +9,7 @@ This is the repository of paper "AProNet: Detecting Objects with Precise Orienta
 Compile the poly_nms:    
 
     cd ${work_dir}/DOTA_devkit/utils/poly_nms  
-    REPO_ROOT/maskrcnn_benchmark/utils/poly_nms$ python setup.py build_ext --inplace  
+    python setup.py build_ext --inplace  
 
 compile the "DOTA-devikit" dependency:   
 
