@@ -8,7 +8,7 @@ PyTorch: 1.2.0
 CUDA: 9.2    
 CUDNN: 7.6.2  
 ```
-### Install
+### Installation
 a. Create a conda virtual environment and activate it. 
 ```
 conda create --name AProNet python=3.6 -y  
@@ -20,20 +20,20 @@ conda install pytorch==1.2.0 torchvision==0.4.0 cudatoolkit=9.2 -c pytorch
 ```
 c. Clone the geovision-AProNet repository
 ```
-git clone https://github.com/csuhan/s2anet.git
-cd s2anet
+git clone https://github.com/ZhWL123456/geovision-AProNet.git
+workdir=./geovision-AProNet
 ```
 d. Compile the `poly_nms`:    
 ```
-cd ${work_dir}/DOTA_devkit/utils/poly_nms  
+cd ${workdir}/maskrcnn_benchmark/utils/poly_nms  
 python setup.py build_ext --inplace  
 ```
 d. Compile the `DOTA-devikit` dependency:   
 ```
 sudo apt-get install swig  
-cd ${work_dir}/DOTA_devkit/polyiou  
+cd ${workdir}/maskrcnn_benchmark/DOTA_devkit/polyiou  
 swig -c++ -python csrc/polyiou.i  
 python setup.py build_ext --inplace  
 ```
-## Run
-
+## Setting the datasets
+a. Create a conda virtual environment and activate it. 
