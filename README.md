@@ -36,4 +36,27 @@ swig -c++ -python csrc/polyiou.i
 python setup.py build_ext --inplace  
 ```
 ## Setting the datasets
-a. Create a conda virtual environment and activate it. 
+a. Prepare your dataset as the status format. 
+This project use the json annotation file with COCO format.
+Make your directory layout like this:
+```
+.
+└── trainset
+    ├── images
+    │   ├── 1.png
+    │   └── 2.png
+    └── labelTxt
+        ├── 1.txt
+        └── 2.txt
+```
+A example of the \*.txt files ('1' means the object is difficult):
+```
+x1 y1 x2 y2 x3 y3 x4 y4 plane 0
+x1 y1 x2 y2 x3 y3 x4 y4 harbor 1
+```
+Run the following Python snippet, and it will generate the json annotation file:
+```python
+from txt2json import collect_unaug_dataset, convert
+img_dic = collect_unaug_dataset( os.path.join( "trainset", "labelTxt" ) )
+convert( img_dic, "trainset",  os.path.join( "trainset", "train.json" ) )
+```
