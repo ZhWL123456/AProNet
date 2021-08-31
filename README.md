@@ -1,11 +1,12 @@
 # AProNet: Detecting Objects with Precise Orientation from Aerial Images
 This is the repository of paper "AProNet: Detecting Objects with Precise Orientation from Aerial Images"
 ## Installation
-    Python: 3.6  
-    PyTorch: 1.2.0
-    CUDA: 9.2    
-    CUDNN: 7.6.2  
-
+```
+Python: 3.6  
+PyTorch: 1.2.0
+CUDA: 9.2    
+CUDNN: 7.6.2  
+```
 Create environment:    
 
     conda create --name AProNet python=3.6
