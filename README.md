@@ -40,7 +40,7 @@ a. Prepare your dataset as the status format.
 This project use the json annotation file with COCO format.
 Make your directory layout like this:
 ```
-.
+${data-dir}
 └── trainset
     ├── images
     │   ├── 1.png
@@ -57,6 +57,7 @@ x1 y1 x2 y2 x3 y3 x4 y4 harbor 1
 Run the following Python snippet, and it will generate the json annotation file:
 ```python
 from txt2json import collect_unaug_dataset, convert
+dat
 img_dic = collect_unaug_dataset( os.path.join( "trainset", "labelTxt" ) )
 convert( img_dic, "trainset",  os.path.join( "trainset", "train.json" ) )
 ```
