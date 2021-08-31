@@ -6,6 +6,10 @@ This is the repository of paper "AProNet: Detecting Objects with Precise Orienta
     CUDA: 9.0  
     CUDNN: 7  
 compile the 'DOTA-devikit' dependency:   
+    Python: 3.6.7  
+    PyTorch: 1.2.0.dev20190704  
+    CUDA: 9.0  
+    CUDNN: 7  
     sudo apt-get install swig
     cd ${work_dir}/DOTA_devkit/polyiou
     swig -c++ -python csrc/polyiou.i
