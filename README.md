@@ -60,5 +60,6 @@ from txt2json import collect_unaug_dataset, convert
 img_dic = collect_unaug_dataset( os.path.join( "trainset", "labelTxt" ) )
 convert( img_dic, "trainset",  os.path.join( "trainset", "train.json" ) )
 ```
-b. Edit the file `maskrcnn_benchmark/config/paths_catalog.py` to set the datasets.
-
+b. Edit the file `maskrcnn_benchmark/config/paths_catalog.py` to set the datasets.  
+c. If your dataset is DOTA(options):  
+For DOTA, you need to run the scripts  `XX` to split the original images into chip images (e.g., 1024*1024), and convert annotations to mmdet's format.
