@@ -36,7 +36,7 @@ swig -c++ -python csrc/polyiou.i
 python setup.py build_ext --inplace  
 ```
 ## Setting the datasets
-a. Prepare your dataset as the status format. 
+a. Prepare your dataset as the status format.   
 This project use the json annotation file with COCO format.
 Make your directory layout like this:
 ```
