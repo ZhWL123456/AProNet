@@ -62,16 +62,16 @@ convert( img_dic, "trainset",  os.path.join( "trainset", "train.json" ) )
 ```
 b. Edit the file `maskrcnn_benchmark/config/paths_catalog.py` to set the datasets.  
 ```python
-    DATA_DIR = "datasets"
+    DATA_DIR = "datasets"  #need to change
     DATASETS = {
         # NOTE Mingtao
         "dota_trainval_cut": {
-            "img_dir": "/DOTA/trainval_cut/images",
-            "ann_file": "/DOTA/trainval_cut/trainval_cut.json"
+            "img_dir": "/DOTA/trainval_cut/images",            #need to change
+            "ann_file": "/DOTA/trainval_cut/trainval_cut.json" #need to change
         },
         "dota_test_cut": {
-            "img_dir": "/DOTA/test_cut/images",
-            "ann_file": "/DOTA/test_cut/test_cut.json"
+            "img_dir": "/DOTA/test_cut/images",                #need to change
+            "ann_file": "/DOTA/test_cut/test_cut.json"         #need to change
         },
     }
 ```
