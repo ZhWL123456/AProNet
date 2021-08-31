@@ -6,12 +6,12 @@ This is the repository of paper "AProNet: Detecting Objects with Precise Orienta
     CUDA: 9.0  
     CUDNN: 7  
     
-Compile the poly_nms:    
+Compile the `poly_nms`:    
 
     cd ${work_dir}/DOTA_devkit/utils/poly_nms  
     python setup.py build_ext --inplace  
 
-compile the "DOTA-devikit" dependency:   
+compile the `DOTA-devikit` dependency:   
 
     sudo apt-get install swig  
     cd ${work_dir}/DOTA_devkit/polyiou  
