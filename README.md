@@ -10,10 +10,10 @@ compile the 'DOTA-devikit' dependency:
     PyTorch: 1.2.0.dev20190704  
     CUDA: 9.0  
     CUDNN: 7  
-    sudo apt-get install swig
-    cd ${work_dir}/DOTA_devkit/polyiou
-    swig -c++ -python csrc/polyiou.i
-    python setup.py build_ext --inplace
+    sudo apt-get install swig  
+    cd ${work_dir}/DOTA_devkit/polyiou  
+    swig -c++ -python csrc/polyiou.i  
+    python setup.py build_ext --inplace  
 
 ## Run
 
