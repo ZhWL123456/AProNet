@@ -60,5 +60,5 @@ from txt2json import collect_unaug_dataset, convert
 img_dic = collect_unaug_dataset( os.path.join( "trainset", "labelTxt" ) )
 convert( img_dic, "trainset",  os.path.join( "trainset", "train.json" ) )
 ```
-b. edit the file `maskrcnn_benchmark/config/paths_catalog.py` to set the datasets.
+b. Edit the file `maskrcnn_benchmark/config/paths_catalog.py` to set the datasets.
 
