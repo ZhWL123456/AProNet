@@ -79,8 +79,6 @@ For DOTA, you need to run the scripts  `XX` to split the original images into ch
 
 ## Acknowledge
 Thanks to **CAPTAIN-WHU** for [**DOTA_devkit**](https://github.com/CAPTAIN-WHU/DOTA_devkit/tree/99388551054be9a6dabb01c8bb2a7eb562d57b4f) project, which guided the data dealing and result evaluation implementation of this project.
-(git@github.com:CAPTAIN-WHU/DOTA_devkit.git)
-Thanks to **facebookresearch** for **maskrcnn-benchmark** and **MingtaoFu** for **gliding_vertex** projects, which guided the framework implementation of this project.
-()
 
+Thanks to **facebookresearch** for [**maskrcnn-benchmark**](https://github.com/facebookresearch/maskrcnn-benchmark) and **MingtaoFu** for [**gliding_vertex**](https://github.com/MingtaoFu/gliding_vertex) projects, which guided the framework implementation of this project.
 
