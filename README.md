@@ -76,3 +76,11 @@ b. Edit the file `maskrcnn_benchmark/config/paths_catalog.py` (from line7 to 17)
 ```
 c. If your dataset is DOTA(options):  
 For DOTA, you need to run the scripts  `XX` to split the original images into chip images (e.g., 1024*1024), and convert annotations to mmdet's format.
+
+## Acknowledge
+Thanks to **CAPTAIN-WHU** for [**DOTA_devkit**](https://github.com/CAPTAIN-WHU/DOTA_devkit/tree/99388551054be9a6dabb01c8bb2a7eb562d57b4f) project, which guided the data dealing and result evaluation implementation of this project.
+(git@github.com:CAPTAIN-WHU/DOTA_devkit.git)
+Thanks to **facebookresearch** for **maskrcnn-benchmark** and **MingtaoFu** for **gliding_vertex** projects, which guided the framework implementation of this project.
+()
+
+
